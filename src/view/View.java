@@ -38,7 +38,7 @@ public class View extends JFrame {
 
     public void completed(int level) {
         update();
-        JOptionPane.showMessageDialog(this, String.format("Уровень %d пройден:", level));
+        JOptionPane.showMessageDialog(this, String.format("Level %d done:", level));
         controller.startNextLevel();
     }
 }
