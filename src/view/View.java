@@ -17,7 +17,6 @@ public class View extends JFrame {
     public void init() {
         field = new Field(this);
         add(field);
-
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(500, 500);
         setLocationRelativeTo(null);
