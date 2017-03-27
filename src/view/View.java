@@ -24,18 +24,22 @@ public class View extends JFrame {
         setTitle("Сокобан");
         setVisible(true);
     }
-    public void setEventListener(EventListener eventListener){
+
+    public void setEventListener(EventListener eventListener) {
         field.setEventListener(eventListener);
     }
-    public void update(){
+
+    public void update() {
         field.repaint();
     }
-    public GameObjects getGameObjects(){
+
+    public GameObjects getGameObjects() {
         return controller.getGameObjects();
     }
-    public void completed(int level){
+
+    public void completed(int level) {
         update();
-        JOptionPane.showMessageDialog(this,String.format("Уровень %d пройден:",level));
+        JOptionPane.showMessageDialog(this, String.format("Уровень %d пройден:", level));
         controller.startNextLevel();
     }
 }

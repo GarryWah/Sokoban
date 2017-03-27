@@ -5,19 +5,16 @@ import java.awt.*;
 /**
  * Created by garry on 05.06.16.
  */
-public class Home extends GameObject
-{
+public class Home extends GameObject {
 
-    public Home(int x, int y)
-    {
+    public Home(int x, int y) {
         super(x, y);
         setWidth(2);
         setHeight(2);
     }
 
     @Override
-    public void draw(Graphics graphics)
-    {
+    public void draw(Graphics graphics) {
         int leftUpperCornerX = getX() - getWidth() / 2;
         int leftUpperCornerY = getY() - getHeight() / 2;
 
